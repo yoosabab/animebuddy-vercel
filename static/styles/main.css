@@ -1,0 +1,248 @@
+body {
+    background-image: url(../images/grids.png);
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+}
+body .main_chopper{
+    position: relative;
+    height: 1px;
+}
+body .main_chopper img{
+    width: auto;
+    position: absolute;
+    top: 420px;
+    left: 50px;
+}
+body .main_brook{
+    position: relative;
+    height: 1px;
+}
+body .main_brook img{
+    width: auto;
+    position: absolute;
+    top: 1093px;
+    height: 700px;
+    left: 72%;
+}
+.topics .more:hover{
+    background-color: transparent;
+    text-decoration: none;
+}
+.room__info span{
+    font-size: 13.5px;
+    text-align: center;
+    opacity: 0.65;
+    margin: auto;
+    padding-top: 12px;
+}
+.room__hosted .room__author__link{
+    margin-bottom: 0;
+}
+.room__details{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.room{
+    width: 73%;
+}
+.room__hosted {
+    text-align: -webkit-center;
+}
+.delete-item .form__group{
+    text-align: center;
+}
+.delete-item .for__group{
+    text-align: center;
+}
+.first_half_rooms{
+    display: none;
+}
+.second_half_rooms{
+    display: none;
+}
+.messages_slider{
+    display: none;
+}
+.sidenav_room{
+    display: none;
+}
+.room .thread__details{
+    color: #efefef;
+}
+.alert_messages p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #ffa0a0 !important;
+}
+.room__message button {
+    position: absolute;
+    right: 31px;
+    background: none;
+    border: none;
+}
+.room__message button:hover {
+    cursor: pointer;
+}
+.room__message button svg {
+    height: 24px;
+    width: auto;
+}
+
+/* slider */
+.swiper {
+    width: 330px;
+    height: auto;
+    background-color: #443C68;
+    border-radius: 8px;
+}
+.swiper .swiper-title {
+    background-color: #514E68;
+    color: #f7f2ee;
+    padding: 6px 15px;
+    font-size: 15px;
+}
+.swiper .activities__box {
+    background-color: #39315c;
+}
+
+/* side navbar */
+.sidenav {
+    height: 79vh;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.sidenav .closebtn {
+    text-decoration: none;
+    color: #bfbfbf;
+    display: block;
+    position: absolute;
+    top: 4px;
+    right: 18px;
+    font-size: 19px;
+}
+.sidenav .participants__top {
+    background-color: #767293;
+}
+.sidenav_room .onclick_room {
+    font-size: 15px;
+    color: #f5f5f5;
+}
+
+
+@media screen and (max-width: 1200px) {
+    body .main_chopper img {
+        width: 20%;
+        position: absolute;
+        top: 390px;
+        left: 25px;
+    }
+    body .main_brook img {
+        width: auto;
+        position: absolute;
+        top: 1063px;
+        height: 600px;
+    }
+}
+@media screen and (max-width: 900px) {
+    body .main_chopper img {
+        display: none;
+    }
+    body .main_brook img {
+        display: none;
+    }
+    .header__menu p {
+        width: max-content;
+    }
+    .header__user {
+        margin-left: -17%;
+    }
+    .home_page_only{
+        display: none;
+    }
+    .first_half_rooms{
+        display: block;
+    }
+    .second_half_rooms{
+        display: block;
+    }
+    .messages_slider{
+        display: block;
+        padding-bottom: 20px;
+    }
+    .room {
+        width: 100%;
+    }
+    .sidenav_room{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .header__user {
+        margin-left: 0;
+    }
+    .room_back_link {
+        display: none;
+    }
+    .sidenav .participants {
+        display: block;
+    }
+    .room .avatar {
+        position: sticky;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .swiper {
+        width: 270px;
+    }
+    .swiper .activities__box {
+        padding: 1rem;
+        margin: 0;
+    }
+    .home {
+        background-image: url(../images/phone-body.png);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+    .activity-page .layout__box {
+        margin: auto;
+    }
+    .room .thread {
+        padding: 13px 7px;
+    }
+    .room .threads {
+        padding: 0 1rem 2rem 1rem;
+    }
+    .room .thread__date {
+        font-size: 11.5px;
+        opacity: 0.7;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .activity-page .activities-page {
+        margin: 1.5rem;
+    }
+    .activity-page .activities__box {
+        margin: 1.1rem;
+        padding: 1.1rem;
+    }
+    .room .thread__date {
+        font-size: 10.5px;
+    }
+    .room .room__box {
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+    }
+    .room .room__message {
+        padding: 1.1rem 1.1rem 2.2rem 1.1rem;
+    }
+}
